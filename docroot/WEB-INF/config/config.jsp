@@ -25,6 +25,8 @@
 	String vToOffset = String.valueOf(request.getAttribute(ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET));	
 	String fromOpacity = String.valueOf(request.getAttribute(ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_FROM_OPACITY));
 	String toOpacity = String.valueOf(request.getAttribute(ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_TO_OPACITY));
+	String title = String.valueOf(request.getAttribute(ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_TITLE));
+	String desc = String.valueOf(request.getAttribute(ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_DESC));
 %>
 <liferay-ui:success key="success" message="your-configuration-was-saved-sucessfully"/>
 <form action="<liferay-portlet:actionURL portletConfiguration='true' />" method="post">
@@ -44,6 +46,14 @@
 			<li>
 				<span>图片地址：</span>
 				<input name="<portlet:namespace/><%=ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_IMG_URL%>" type="text" style="width:80%;" value="<%=imgUrl%>"/>
+			</li>
+			<li>
+				<span>标题：</span>
+				<input name="<portlet:namespace/><%=ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_TITLE%>" type="text" style="width:80%;" value="<%=title%>"/>
+			</li>
+			<li>
+				<span>描述：</span>
+				<textarea name="<portlet:namespace/><%=ShidoImageActConfigurationAction.SHIDO_IMAGE_ACT_DESC%>" style="width:80%;"><%=desc%></textarea>
 			</li>
 			<li>
 				<span>背景颜色：</span>

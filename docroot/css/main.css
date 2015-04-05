@@ -1,0 +1,73 @@
+.shido-image-act {
+	position: relative;
+	overflow: hidden;
+	
+	.words {
+		position:absolute;
+		height:100%;
+		width:50%;
+		min-width:350px;
+		z-index:1;
+		
+		.table {
+			display:table;
+			height:100%;
+			text-align:center;
+			width:100%;
+			margin:0 !important;
+			
+			.cell {
+				display:table-cell;
+				vertical-align:middle;
+				height:100%;
+				width:100%;
+				
+				.title {
+					display:block;
+					min-width:350px;
+					text-align:center;
+					font-size:40px;
+					font-weight:bold;
+					line-height:60px;
+				}
+				
+				.desc {
+					display:block;
+					min-width:350px;
+					text-align:center;
+					font-size:16px;
+					color:gray;
+					line-height:30px;
+				}
+				
+				.link {
+					display:block;
+					text-align:center;
+					min-width:350px;
+					
+					a {
+						background:#dc143c;
+						display:inline-block;
+						width:100px;
+						height:30px;
+						line-height:30px;
+						color:white;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+	
+	.picture {
+		position:absolute;
+		height:100%;
+		width:50%;
+		min-width:350px;
+		z-index:2;
+		
+		img {
+			position:absolute;
+		}
+	}
+}

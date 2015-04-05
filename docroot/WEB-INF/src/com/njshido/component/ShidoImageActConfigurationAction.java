@@ -31,6 +31,9 @@ public class ShidoImageActConfigurationAction extends DefaultConfigurationAction
 	public static final String SHIDO_IMAGE_ACT_FROM_OPACITY = "shido_image_act_from_opacity";
 	public static final String SHIDO_IMAGE_ACT_TO_OPACITY = "shido_image_act_to_opacity";
 	
+	public static final String SHIDO_IMAGE_ACT_TITLE = "shido_image_act_title";
+	public static final String SHIDO_IMAGE_ACT_DESC = "shido_image_act_desc";
+	
 	private static final String CONFIG_JSP = "/WEB-INF/config/config.jsp";
 	private static final String SUCCESS = "success";
 	
@@ -64,6 +67,8 @@ public class ShidoImageActConfigurationAction extends DefaultConfigurationAction
 		renderRequest.setAttribute(SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET, preferences.getValue(SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET, SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET_DEFAULT_VAL));
 		renderRequest.setAttribute(SHIDO_IMAGE_ACT_FROM_OPACITY, preferences.getValue(SHIDO_IMAGE_ACT_FROM_OPACITY, SHIDO_IMAGE_ACT_FROM_OPACITY_DEFAULT_VAL));
 		renderRequest.setAttribute(SHIDO_IMAGE_ACT_TO_OPACITY, preferences.getValue(SHIDO_IMAGE_ACT_TO_OPACITY, SHIDO_IMAGE_ACT_TO_OPACITY_DEFAULT_VAL));
+		renderRequest.setAttribute(SHIDO_IMAGE_ACT_TITLE, preferences.getValue(SHIDO_IMAGE_ACT_TITLE, StringPool.BLANK));
+		renderRequest.setAttribute(SHIDO_IMAGE_ACT_DESC, preferences.getValue(SHIDO_IMAGE_ACT_DESC, StringPool.BLANK));
 		return CONFIG_JSP;
 	}
 	
@@ -85,6 +90,8 @@ public class ShidoImageActConfigurationAction extends DefaultConfigurationAction
 			String vToOffset = ParamUtil.getString(actionRequest, SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET);
 			String fromOpacity = ParamUtil.getString(actionRequest, SHIDO_IMAGE_ACT_FROM_OPACITY);
 			String toOpacity = ParamUtil.getString(actionRequest, SHIDO_IMAGE_ACT_TO_OPACITY);
+			String title = ParamUtil.getString(actionRequest, SHIDO_IMAGE_ACT_TITLE);
+			String desc = ParamUtil.getString(actionRequest, SHIDO_IMAGE_ACT_DESC);
 			
 			preferences.setValue(SHIDO_IMAGE_ACT_BG_COLOR, bgColor);
 			preferences.setValue(SHIDO_IMAGE_ACT_IMG_URL, imgUrl);
@@ -99,6 +106,8 @@ public class ShidoImageActConfigurationAction extends DefaultConfigurationAction
 			preferences.setValue(SHIDO_IMAGE_ACT_VERTICAL_TO_OFFSET, vToOffset);
 			preferences.setValue(SHIDO_IMAGE_ACT_FROM_OPACITY, fromOpacity);
 			preferences.setValue(SHIDO_IMAGE_ACT_TO_OPACITY, toOpacity);
+			preferences.setValue(SHIDO_IMAGE_ACT_TITLE, title);
+			preferences.setValue(SHIDO_IMAGE_ACT_DESC, desc);
 			preferences.store();
 			
 			SessionMessages.add(actionRequest, SUCCESS);
