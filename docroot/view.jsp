@@ -33,8 +33,8 @@
 	<div style="position:absolute;height:100%;width:50%;min-width:350px;z-index:2;left:0;">
 		<div style="display:table;height:100%;text-align:center;width:100%;">
 			<div style="display:table-cell;vertical-align:middle;height:100%;text-align:right;width:100%;">
-				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:20px;font-weight:bold;">赛百味经典版</span>
-				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;">创造天猫同品类销量冠军，消费者对包装好评如潮，<br/>快速占领互联网宠物市场。</span>
+				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:40px;font-weight:bold;line-height:60px;">赛百味经典版</span>
+				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:16px;color:gray;line-height:30px;">创造天猫同品类销量冠军，消费者对包装好评如潮，<br/>快速占领互联网宠物市场。</span>
 				<br/><br/>
 				<span style="display:inline-block;width:70%;text-align:center;min-width:350px;">
 					<a style="background:#dc143c;display:inline-block;width:100px;height:30px;line-height:30px;color:white;text-decoration:none;" href="#">了解详情 &gt;</a>
@@ -54,8 +54,8 @@
 	<div style="position:absolute;height:100%;width:50%;min-width:350px;z-index:2;right:0;">
 		<div style="display:table;height:100%;text-align:center;width:100%;">
 			<div style="display:table-cell;vertical-align:middle;height:100%;text-align:left;width:100%;">
-				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:20px;font-weight:bold;">赛百味经典版</span>
-				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;">创造天猫同品类销量冠军，消费者对包装好评如潮，<br/>快速占领互联网宠物市场。</span>
+				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:40px;font-weight:bold;line-height:60px;">赛百味经典版</span>
+				<span style="display:inline-block;width:70%;min-width:350px;text-align:center;font-size:16px;color:gray;line-height:30px;">创造天猫同品类销量冠军，消费者对包装好评如潮，<br/>快速占领互联网宠物市场。</span>
 				<br/><br/>
 				<span style="display:inline-block;width:70%;text-align:center;min-width:350px;">
 					<a style="background:#dc143c;display:inline-block;width:100px;height:30px;line-height:30px;color:white;text-decoration:none;" href="#">了解详情 &gt;</a>
